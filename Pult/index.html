@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang='ru'>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="description" content="Gallo Acoustics - огромный ассортимент акустики в интернет-магазине Pult.ru, доставка по всей России" />
+        <meta name="keywords" content="Gallo Acoustics, акустика, Pult" />
+        <link rel="stylesheet" href=".\assets\css\style.css">
+        <link href="./assets/img/icons/favicon.png" rel="shortcut icon" type="image/png">
+        <link rel="stylesheet" href=".\assets\css\simpleSlider.min.css">
+        <link rel="stylesheet" href=".\assets\css\theme.min.css">
+        <link rel="stylesheet" href=".\assets\css\splide.min.css">
+        <link rel="stylesheet" href=".\assets\css\swiper-bundle.min.css">
+        <link rel="stylesheet" type="text/css" href=".\assets\css\slideshow.css"></link>
+        <link href="./assets/css/fonts.min.css" rel="stylesheet">
+        <script src=".\assets\js\script.js" defer></script>
+        <script src=".\assets\js\jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" ></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <title>Купить продукцию Gallo Acoustics в интернет-магазине Pult.ru</title>
+        <meta name="description" content="Gallo Acoustics - огромный ассортимент акустики в интернет-магазине Pult.ru, доставка по всей России" />
+        <meta name="keywords" content="Gallo Acoustics, акустика, Pult" />
+        
+        
+    </head>
+    <body class="body">
+        
+        <header class="header">
+            <div class="wrapper">
+                <div class="header__wrapper">
+                    <a class="header__link link" href="https://www.pult.ru/" target="_blank">
+                        <img alt="Gallo_Acoustics" class="header__img" src="./assets/img/icons/Gallo_Acoustics.svg">
+                    </a>
+                    <a class="header__link link" href="https://www.pult.ru/" target="_blank">
+                        <img alt="pult.ru" class="header__img header__img--pult" src="./assets/img/icons/logo_pult.svg">
+                    </a>
+                </div>
+            </div>
+        </header>
+
+<div id="menu_product">
+<div class="wrapper">
+    <div class="slider swiper-container mySwiper">
+        
+        
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a class=" slider__link link widget__item" v-on:click='openProduct("micro"), seen=true, scrollTo()' target="">
+                    <div class="slider__baner">
+                  <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/micro_micro-se.jpg">
+                  <p class="slider__text title">
+                      <span>побалуй </span>
+                      <span class="slider__text--black">себя выбором</span>
+                  </p>
+                 
+                 </div>
+                 <div class="slider__footer">
+                    <p class="slider__title title">Micro и micro se</p>
+                    <p class="slider__text-footer">спутниковые колонки</p>
+                </div>
+                  </a>
+              </div>    
+            <div class="swiper-slide">
+                <a class=" slider__link link widget__item" v-on:click='openProduct("microSeDroplet"), seen=true, scrollTo()' target="">
+                    <div class="slider__baner">
+                  <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/droplet.jpg">
+                  <p class="slider__text title">
+                      <span class="slider__text--white">давай </span>
+                      <span class="slider__text--black">зажжем</span>
+                  </p>
+                  
+                 </div>
+                 <div class="slider__footer">
+                    <p class="slider__title title">droplet</p>
+                    <p class="slider__text-footer">подвесная акустика</p>
+                </div>
+                  </a>
+                
+              </div>
+      
+              
+     
+      <div class="swiper-slide">
+        <a class=" slider__link link widget__item" v-on:click='openProduct("subwoofers"), seen=true, scrollTo()'target="">
+          <div class="slider__baner">
+        <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/PROFILESUBx2.jpg">
+        <p class="slider__text title">
+            <span>держаться </span>
+            <span class="slider__text--black">в тени</span>
+        </p>
+        
+       </div>
+       <div class="slider__footer">
+        <p class="slider__title title">PROFILESUB</p>
+        <p class="slider__text-footer">сабвуфер</p>
+    </div>
+        </a>
+        
+      </div>
+          
+     
+      
+            
+  
+          
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<div class="wrapper">
+      <div class="slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a class=" slider__link link widget__item" v-on:click='openProduct("micro"), seen=true, scrollTo()' target="">
+                <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/micro.jpg">
+                <p class="slider__text-2  slider__text--discount">скидки до<br>
+                    <span class="slider__text--discount-b">30%</span>
+                </p>
+                <div class="slider__footer">
+                    <p class="slider__title-2 title">micro</p>
+                </div>
+                </a>
+
+          </div>
+          <div class="swiper-slide">
+
+            <a class=" slider__link link widget__item" v-on:click='openProduct("microSe"), seen=true, scrollTo()' target="">
+                <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/micro-se.jpg">
+                <p class="slider__text-2  slider__text--discount">скидки до<br>
+                    <span class="slider__text--discount-b">30%</span>
+                </p>
+                <div class="slider__footer">
+                    <p class="slider__title-2 title">micro se</p>
+                </div>
+                </a>
+
+          </div>
+          <div class="swiper-slide">
+            <a class=" slider__link link widget__item" v-on:click='openProduct("microDroplet"), seen=true, scrollTo()' target="">
+                <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/micro-droplet.jpg">
+                <p class="slider__text-2  slider__text--discount">скидки до<br>
+                    <span class="slider__text--discount-b">30%</span>
+                </p>
+                <div class="slider__footer">
+                    <p class="slider__title-2 title">micro droplet</p>
+                </div>
+                </a>
+
+
+          </div>
+          <div class="swiper-slide">
+
+            <a class=" slider__link link widget__item" v-on:click='openProduct("microSeDroplet"), seen=true, scrollTo()' target="">
+                <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/micro-droplet.jpg">
+                <p class="slider__text-2  slider__text--discount">скидки до<br>
+                    <span class="slider__text--discount-b">30%</span>
+                </p>
+                <div class="slider__footer">
+                    <p class="slider__title-2 title">micro se droplet</p>
+                </div>
+                </a>
+
+          </div>
+          <div class="swiper-slide">
+            <a class=" slider__link link widget__item" v-on:click='openProduct("adivaDroplet"), seen=true, scrollTo()' target="">
+                <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/micro-droplet.jpg">
+                <p class="slider__text-2  slider__text--discount">скидки до<br>
+                    <span class="slider__text--discount-b">30%</span>
+                </p>
+                <div class="slider__footer">
+                    <p class="slider__title-2 title">adiva droplet</p>
+                </div>
+                </a>
+
+
+          </div>
+          <div class="swiper-slide">
+              
+            <a class=" slider__link link widget__item" v-on:click='openProduct("adivaDroplet"), seen=true, scrollTo()' target="">
+                <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/micro-droplet.jpg">
+                <p class="slider__text-2  slider__text--discount">скидки до<br>
+                    <span class="slider__text--discount-b">30%</span>
+                </p>
+                <div class="slider__footer">
+                    <p class="slider__title-2 title">adiva droplet</p>
+                </div>
+                </a>
+          </div>
+          <div class="swiper-slide">
+            <a class=" slider__link link widget__item" v-on:click='openProduct("adivaSe"), seen=true, scrollTo()' target="">
+                <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/micro-droplet.jpg">
+                <p class="slider__text-2  slider__text--discount">скидки до<br>
+                    <span class="slider__text--discount-b">30%</span>
+                </p>
+                <div class="slider__footer">
+                    <p class="slider__title-2 title">adiva se droplet</p>
+                </div>
+                </a>
+
+
+          </div>
+          <div class="swiper-slide">
+            <a class=" slider__link link widget__item" v-on:click='openProduct("adiva"), seen=true, scrollTo()' target="">
+                <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/adiva.jpg">
+                <p class="slider__text-2  slider__text--discount">скидки до<br>
+                    <span class="slider__text--discount-b">30%</span>
+                </p>
+                <div class="slider__footer">
+                    <p class="slider__title-2 title">adiva</p>
+                </div>
+                </a>
+
+          </div>
+          <div class="swiper-slide">
+
+            <a class=" slider__link link widget__item" v-on:click='openProduct("adivaSe"), seen=true, scrollTo()' target="">
+                <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/adiva.jpg">
+                <p class="slider__text-2  slider__text--discount">скидки до<br>
+                    <span class="slider__text--discount-b">30%</span>
+                </p>
+                <div class="slider__footer">
+                    <p class="slider__title-2 title">adiva se</p>
+                </div>
+                </a>
+          </div>
+          <div class="swiper-slide">
+            <a class=" slider__link link widget__item" v-on:click='openProduct("stradaTwo"), seen=true, scrollTo()' target="">
+                <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/strada-2.jpg">
+                <p class="slider__text-2 slider__text--right  slider__text--discount">скидки до<br>
+                    <span class="slider__text--discount-b">30%</span>
+                </p>
+                <div class="slider__footer">
+                    <p class="slider__title-2 title">strada 2</p>
+                </div>
+                </a>
+
+          </div>
+          <div class="swiper-slide">
+            <a class=" slider__link link widget__item" v-on:click='openProduct("subwoofers"), seen=true, scrollTo()' target="">
+                <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/PROFILESUBx2.jpg">
+                <p class="slider__text-2  slider__text--discount">скидки до<br>
+                    <span class="slider__text--discount-b">30%</span>
+                </p>
+                <div class="slider__footer">
+                    <p class="slider__title-2 title">subwoofers</p>
+                </div>
+                </a>
+          </div>
+          
+        </div>
+        <div class="swiper-pagination "></div>
+      </div>
+    </div>
+    
+  
+
+
+<div  class="menu">
+    <div class="wrapper">
+        <div class="menu__wrapper">
+
+            <div  class="menu__col">
+                <ul class="menu__widget widget">
+                                            <li class="widget__item" data-image="./assets/img/menu/micro.jpg">
+                            <a class="widget__link" v-on:click='openProduct("micro"), seen=true, scrollTo()' >micro</a>
+                        </li>
+                                            <li class="widget__item" data-image="./assets/img/menu/micro_se.jpg">
+                            <a class="widget__link" v-on:click='openProduct("microSe"), seen=true, scrollTo()'>micro se</a>
+                        </li>
+                                            <li class="widget__item" data-image="./assets/img/menu/adiva.jpg">
+                            <a class="widget__link" v-on:click='openProduct("adiva"), seen=true, scrollTo()'>adiva</a>
+                        </li>
+                                            <li class="widget__item" data-image="./assets/img/menu/adiva_se.jpg">
+                            <a class="widget__link" v-on:click='openProduct("adivaSe"), seen=true, scrollTo()'>adiva se</a>
+                        </li>
+                                            <li class="widget__item" data-image="./assets/img/menu/micro_droplet.jpg">
+                            <a class="widget__link" v-on:click='openProduct("microDroplet"), seen=true, scrollTo()'>micro droplet</a>
+                        </li>
+                                            <li class="widget__item" data-image="./assets/img/menu/micro_se_droplet.jpg">
+                            <a class="widget__link" v-on:click='openProduct("microSeDroplet"), seen=true, scrollTo()'>micro se droplet</a>
+                        </li>
+                                            <li class="widget__item" data-image="./assets/img/menu/adiva_droplet.jpg">
+                            <a class="widget__link" v-on:click='openProduct("adivaDroplet"), seen=true, scrollTo()'>adiva droplet</a>
+                        </li>
+                                            <li class="widget__item " data-image="./assets/img/menu/adiva_se_droplet.jpg">
+                            <a class="widget__link" v-on:click='openProduct("adivaSeDroplet"), seen=true, scrollTo()'>adiva se droplet</a>
+                        </li>
+                                            <li class="widget__item" data-image="./assets/img/menu/strada_2.jpg">
+                            <a class="widget__link" v-on:click='openProduct("stradaTwo"), seen=true, scrollTo()'>strada 2</a>
+                        </li>
+                                            <li class="widget__item" data-image="./assets/img/menu/subwoofers.jpg">
+                            <a class="widget__link" v-on:click='openProduct("subwoofers"), seen=true, scrollTo()'>subwoofers</a>
+                        </li>
+                                            <li class="widget__item" data-image="./assets/img/menu/accessories.jpg">
+                            <a class="widget__link" v-on:click='openProduct("accessories"), seen=true, scrollTo()'>accessories</a>
+                        </li>
+                                    </ul>
+            </div>
+            <div class="menu__col">
+                                    <img alt="micro" class="menu__img" src="./assets/img/menu/adiva_se_droplet.jpg">
+                            </div>
+        </div>
+    </div>
+   
+</div>
+
+
+
+ 
+
+<div class="product" id="productItem"  v-if="seen">
+    <div class="wrapper">
+        <div class="product__grid">
+                <div class="product__picture">
+        
+        <h2 class="product__picture-title title">{{ productTitle }} </h2>
+        <img :src="srcPath" :alt="productTitle" class="product__img" >
+        
+    </div>
+    <div class="product__content">
+        
+        
+        <h2 class="product__title title">{{ productTitle }}</h2>
+        
+        <p class="product__text"> {{ productDescription }}</p>
+        <div class="product__get">
+            <a class="product__btn link" :href="productButtonLink" target="_blank">купить</a>
+            <div class="product__prices">
+                <p class="product__price product__price--before">{{ productOldPrice }}</p>
+                <p class="product__price product__price--after">{{ productNewPrice }}</p>
+            </div>
+        </div>
+    </div>
+                        <p class="product__question">
+                            выбери свой цвет
+                    </p>
+
+         
+                    <ul class="product__colors" >
+
+    
+                        <li class="product__color"   v-for="(n, index) in productQuantity" >
+                        <a class="cursor__item"  v-on:click='currentClass=index'>
+                            <img :alt="productTitle" class="product__img-color" v-bind:class="{ ' product__color active': index == currentClass }"  :src='srcSmallPath(index)'>
+                        </a>
+                    </li>
+                    </ul>
+       
+            </div>
+    </div>
+</div>
+</div>
+
+  
+  
+  
+    </body>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__blocks">
+                <div class="footer__block">
+                    <div class="footer__logo">
+                        <a class="footer__logo-link link" href="https://www.pult.ru/" target="_blank">
+                            <img alt="pult.ru" class="footer__logo-img" src="./assets/img/icons/Logo_pult-footer.svg">
+                        </a>
+                    </div>
+                    <div class="footer__call">
+                        <a class="footer__tel" href="tel:+78005555152" target="_blank">8(800)555-51-52</a>
+                        <p class="footer__call-text">Звонок по России бесплатный</p>
+                    </div>
+                </div>
+    
+                <ul class="footer__columns">
+                    <li class="footer__column">
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__link link" href="#">Акустика</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__link" href="#">Hi-Fi</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__link" href="#">Винил</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__link" href="#">Наушники</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__link" href="#">Телевизоры</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__link" href="#">Проекторы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__column">
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__link" href="#">Распродажа</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__link" href="#">Outlet</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__link" href="#">Акции</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__link" href="#">Бонусы и скидки</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__link" href="#">Рассрочка</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__column">
+                        <ul class="footer__list">
+                            <li class="footer__list-item">
+                                <a class="footer__link" href="#">О компании</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__link" href="#">Контакты</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__link" href="#">Салоны</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__link" href="#">Новости</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="footer__copyright">
+            <script type="text/javascript">document.write(new Date().getFullYear());</script> © / pult.ru / все права защищены</p>
+        </div>
+        
+    </footer>
+</html>
