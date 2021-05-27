@@ -185,7 +185,7 @@ var menu_1 = new Vue({
   },
   methods:{
     scrollTo: function () {
-      setTimeout(function(){document.getElementById('productItem').scrollIntoView({behavior: "smooth"})},1)
+      setTimeout(function(){document.getElementById('productItem').scrollIntoView({behavior: "smooth"})},5)
     }, 
     updateMessageCom: function() {
         this.$refs.childComponent.updateMessage("test3");

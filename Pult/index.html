@@ -294,9 +294,9 @@
                             выбери свой цвет
                     </p>
                     <ul class="product__colors" >
-                        <li class="product__color"   v-for="(n, index) in productQuantity" >
-                        <a class="cursor__item"  v-on:click='currentClass=index'>
-                            <img :alt="productTitle" class="product__img-color" v-bind:class="{ ' product__color active': index == currentClass }"  :src='srcSmallPath(index)'>
+                        <li class="product__color"    v-for="(n, index) in productQuantity" >
+                        <a class="cursor__item" v-on:click='currentClass=index'>
+                            <img :alt="productTitle" class="product__img-color" v-bind:class="{ ' product__color active': index == currentClass }"   :src='srcSmallPath(index)'>
                         </a>
                     </li>
                     </ul>

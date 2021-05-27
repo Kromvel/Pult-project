@@ -1,5 +1,9 @@
 
 *{-moz-box-sizing:border-box;box-sizing:border-box;}
+img {
+    display: block;
+}
+
 .header{
     padding: 20px 0;
 }
