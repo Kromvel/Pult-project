@@ -22,11 +22,8 @@
         <title>Купить продукцию Gallo Acoustics в интернет-магазине Pult.ru</title>
         <meta name="description" content="Gallo Acoustics - огромный ассортимент акустики в интернет-магазине Pult.ru, доставка по всей России" />
         <meta name="keywords" content="Gallo Acoustics, акустика, Pult" />
-        
-        
     </head>
     <body class="body">
-        
         <header class="header">
             <div class="wrapper">
                 <div class="header__wrapper">
@@ -39,12 +36,11 @@
                 </div>
             </div>
         </header>
-
 <div id="menu_product">
+
+    <!-- первый слайдер-->
 <div class="wrapper">
     <div class="slider swiper-container mySwiper">
-        
-        
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <a class=" slider__link link widget__item" v-on:click='openProduct("micro"), seen=true, scrollTo()' target="">
@@ -54,7 +50,6 @@
                       <span>побалуй </span>
                       <span class="slider__text--black">себя выбором</span>
                   </p>
-                 
                  </div>
                  <div class="slider__footer">
                     <p class="slider__title title">Micro и micro se</p>
@@ -70,18 +65,13 @@
                       <span class="slider__text--white">давай </span>
                       <span class="slider__text--black">зажжем</span>
                   </p>
-                  
                  </div>
                  <div class="slider__footer">
                     <p class="slider__title title">droplet</p>
                     <p class="slider__text-footer">подвесная акустика</p>
                 </div>
                   </a>
-                
               </div>
-      
-              
-     
       <div class="swiper-slide">
         <a class=" slider__link link widget__item" v-on:click='openProduct("subwoofers"), seen=true, scrollTo()'target="">
           <div class="slider__baner">
@@ -89,26 +79,19 @@
         <p class="slider__text title">
             <span>держаться </span>
             <span class="slider__text--black">в тени</span>
-        </p>
-        
+        </p> 
        </div>
        <div class="slider__footer">
         <p class="slider__title title">PROFILESUB</p>
         <p class="slider__text-footer">сабвуфер</p>
     </div>
-        </a>
-        
+        </a>       
       </div>
-          
-     
-      
-            
-  
-          
-        </div>
+    </div>
         <div class="swiper-pagination"></div>
     </div>
 </div>
+<!-- второй слайдер-->
 <div class="wrapper">
       <div class="slider swiper-container">
         <div class="swiper-wrapper">
@@ -122,7 +105,6 @@
                     <p class="slider__title-2 title">micro</p>
                 </div>
                 </a>
-
           </div>
           <div class="swiper-slide">
 
@@ -135,7 +117,6 @@
                     <p class="slider__title-2 title">micro se</p>
                 </div>
                 </a>
-
           </div>
           <div class="swiper-slide">
             <a class=" slider__link link widget__item" v-on:click='openProduct("microDroplet"), seen=true, scrollTo()' target="">
@@ -147,8 +128,6 @@
                     <p class="slider__title-2 title">micro droplet</p>
                 </div>
                 </a>
-
-
           </div>
           <div class="swiper-slide">
 
@@ -161,7 +140,6 @@
                     <p class="slider__title-2 title">micro se droplet</p>
                 </div>
                 </a>
-
           </div>
           <div class="swiper-slide">
             <a class=" slider__link link widget__item" v-on:click='openProduct("adivaDroplet"), seen=true, scrollTo()' target="">
@@ -173,11 +151,8 @@
                     <p class="slider__title-2 title">adiva droplet</p>
                 </div>
                 </a>
-
-
           </div>
-          <div class="swiper-slide">
-              
+          <div class="swiper-slide">          
             <a class=" slider__link link widget__item" v-on:click='openProduct("adivaDroplet"), seen=true, scrollTo()' target="">
                 <img alt="Micro_micro-se" class="slider__img" src="./assets/img/banners/micro-droplet.jpg">
                 <p class="slider__text-2  slider__text--discount">скидки до<br>
@@ -198,8 +173,6 @@
                     <p class="slider__title-2 title">adiva se droplet</p>
                 </div>
                 </a>
-
-
           </div>
           <div class="swiper-slide">
             <a class=" slider__link link widget__item" v-on:click='openProduct("adiva"), seen=true, scrollTo()' target="">
@@ -211,7 +184,6 @@
                     <p class="slider__title-2 title">adiva</p>
                 </div>
                 </a>
-
           </div>
           <div class="swiper-slide">
 
@@ -235,7 +207,6 @@
                     <p class="slider__title-2 title">strada 2</p>
                 </div>
                 </a>
-
           </div>
           <div class="swiper-slide">
             <a class=" slider__link link widget__item" v-on:click='openProduct("subwoofers"), seen=true, scrollTo()' target="">
@@ -247,20 +218,16 @@
                     <p class="slider__title-2 title">subwoofers</p>
                 </div>
                 </a>
-          </div>
-          
+          </div>        
         </div>
         <div class="swiper-pagination "></div>
       </div>
     </div>
     
-  
-
-
+  <!-- блок с со списком моделей устройств-->
 <div  class="menu">
     <div class="wrapper">
         <div class="menu__wrapper">
-
             <div  class="menu__col">
                 <ul class="menu__widget widget">
                                             <li class="widget__item" data-image="./assets/img/menu/micro.jpg">
@@ -303,13 +270,7 @@
                             </div>
         </div>
     </div>
-   
 </div>
-
-
-
- 
-
 <div class="product" id="productItem"  v-if="seen">
     <div class="wrapper">
         <div class="product__grid">
@@ -317,13 +278,9 @@
         
         <h2 class="product__picture-title title">{{ productTitle }} </h2>
         <img :src="srcPath" :alt="productTitle" class="product__img" >
-        
     </div>
     <div class="product__content">
-        
-        
         <h2 class="product__title title">{{ productTitle }}</h2>
-        
         <p class="product__text"> {{ productDescription }}</p>
         <div class="product__get">
             <a class="product__btn link" :href="productButtonLink" target="_blank">купить</a>
@@ -336,26 +293,17 @@
                         <p class="product__question">
                             выбери свой цвет
                     </p>
-
-         
                     <ul class="product__colors" >
-
-    
                         <li class="product__color"   v-for="(n, index) in productQuantity" >
                         <a class="cursor__item"  v-on:click='currentClass=index'>
                             <img :alt="productTitle" class="product__img-color" v-bind:class="{ ' product__color active': index == currentClass }"  :src='srcSmallPath(index)'>
                         </a>
                     </li>
                     </ul>
-       
             </div>
     </div>
 </div>
 </div>
-
-  
-  
-  
     </body>
     <footer class="footer">
         <div class="wrapper">
@@ -432,7 +380,6 @@
                     </li>
                 </ul>
             </div>
-
             <p class="footer__copyright">
             <script type="text/javascript">document.write(new Date().getFullYear());</script> © / pult.ru / все права защищены</p>
         </div>
